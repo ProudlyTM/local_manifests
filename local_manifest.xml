@@ -2,22 +2,24 @@
 <manifest>
 
   <!--Remote names-->
-  <remote name="github" fetch="https://github.com" />
   <remote name="losgit" fetch="https://github.com/LineageOS" />
 
   <!--Harpia device tree-->
   <project path="device/motorola/harpia" name="Moto8916-Devs/device_motorola_harpia" revision="8.1" remote="github" />
-  <project path="device/motorola/msm8916-common" name="Moto8916-Devs/device_motorola_msm8916-common" revision="oreo8.1" remote="github"/>
-  <project path="kernel/motorola/msm8916" name="Moto8916-Devs/android_kernel_motorola_msm8916"  revision="8.1.x" remote="github"/>
+  <project path="device/motorola/msm8916-common" name="Moto8916-Devs/device_motorola_msm8916-common" revision="oreo8.1" remote="github" />
+  <project path="kernel/motorola/msm8916" name="Moto8916-Devs/android_kernel_motorola_msm8916"  revision="8.1.x" remote="github" />
   
   <!--Dependencies-->
   <project path="vendor/motorola" name="Moto8916-Devs/vendor_motorola" revision="8.1.x" remote="github" />
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" revision="lineage-15.0" remote="losgit" />
   <project path="external/sony/boringssl-compat" name="lineageos/android_external_sony_boringssl-compat" revision="lineage-15.0" remote="github" />
   
-  <!--HALs-->
-  <project path="hardware/qcom/audio-caf/msm8916" name="GZOSP/hardware_qcom_audio" revision="8.1-caf-8916" remote="github"/>
-  <project path="hardware/qcom/display-caf/msm8916" name="GZOSP/hardware_qcom_display" revision="8.1-caf-8916" remote="github"/> 
-  <project path="hardware/qcom/media-caf/msm8916" name="GZOSP/hardware_qcom_media" revision="8.1-caf-8916" remote="github"/> 
+  <!--Remove projects and add new HALs-->
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <project path="hardware/qcom/audio-caf/msm8916" name="GZOSP/hardware_qcom_audio" revision="8.1-caf-8916" remote="github" />
+  <project path="hardware/qcom/display-caf/msm8916" name="GZOSP/hardware_qcom_display" revision="8.1-caf-8916" remote="github" /> 
+  <project path="hardware/qcom/media-caf/msm8916" name="GZOSP/hardware_qcom_media" revision="8.1-caf-8916" remote="github" /> 
 
 </manifest>
