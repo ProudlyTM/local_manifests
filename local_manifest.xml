@@ -14,6 +14,7 @@
   <project path="vendor/motorola" name="Akianonymus/vendor_motorola" revision="8.1" remote="github" />
   <project path="device/qcom/common" name="android_device_qcom_common" revision="staging/lineage-15.1" remote="losgit" />
   <project path="external/sony/boringssl-compat" name="android_external_sony_boringssl-compat" revision="lineage-15.0" remote="losgit" />
+  <project path="external/bson" name="android_external_bson" revision="cm-14.1" remote="losgit" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0" name="UBERTC/arm-eabi-6.0" revision="master" remote="bitbucket" />
 
 </manifest>
