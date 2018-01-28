@@ -6,23 +6,14 @@
   <remote name="bitbucket" fetch="https://bitbucket.org" />
 
   <!--Harpia device tree-->
-  <project path="device/motorola/harpia" name="Moto8916-Devs/device_motorola_harpia" revision="8.1" remote="github" />
-  <project path="device/motorola/msm8916-common" name="Moto8916-Devs/device_motorola_msm8916-common" revision="oreo8.1" remote="github" />
-  <project path="kernel/motorola/msm8916" name="Moto8916-Devs/android_kernel_motorola_msm8916"  revision="oreo-mr1" remote="github" />
+  <project path="device/motorola/harpia" name="Akianonymus/android_device_motorola_harpia" revision="8.1" remote="github" />
+  <project path="device/motorola/msm8916-common" name="Akianonymus/android_device_motorola_msm8916-common" revision="8.1" remote="github" />
+  <project path="kernel/motorola/msm8916" name="Akianonymus/android_kernel_motorola_msm8916"  revision="hx-o" remote="github" />
   
   <!--Dependencies-->
-  <project path="vendor/motorola" name="Moto8916-Devs/vendor_motorola" revision="8.1.x" remote="github" />
+  <project path="vendor/motorola" name="Akianonymus/vendor_motorola" revision="8.1" remote="github" />
   <project path="device/qcom/common" name="android_device_qcom_common" revision="staging/lineage-15.1" remote="losgit" />
-  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" revision="staging/lineage-15.1" remote="losgit" />
   <project path="external/sony/boringssl-compat" name="android_external_sony_boringssl-compat" revision="lineage-15.0" remote="losgit" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0" name="UBERTC/arm-eabi-6.0" revision="master" remote="bitbucket" />
-  
-  <!--Remove projects and add new ones-->
-  <remove-project name="LineageOS/android_hardware_qcom_audio" />
-  <remove-project name="LineageOS/android_hardware_qcom_media" />
-  <remove-project name="LineageOS/android_frameworks_native" />
-  <project path="hardware/qcom/audio-caf/msm8916" name="GZOSP/hardware_qcom_audio" revision="8.1-caf-8916" remote="github" />
-  <project path="hardware/qcom/media-caf/msm8916" name="GZOSP/hardware_qcom_media" revision="8.1-caf-8916" remote="github" />
-  <project path="frameworks/native" name="proudlytm/android_frameworks_native" revision="staging/lineage-15.1" remote="github" />
 
 </manifest>
