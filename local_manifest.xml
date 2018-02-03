@@ -5,13 +5,12 @@
   <remote name="losgit" fetch="https://github.com/LineageOS" />
   
   <!--Harpia device tree-->
-  <project path="device/motorola/harpia" name="Akianonymus/android_device_motorola_harpia" revision="8.1" remote="github" />
-  <project path="device/motorola/msm8916-common" name="Akianonymus/android_device_motorola_msm8916-common" revision="8.1" remote="github" />
-  <project path="kernel/motorola/msm8916" name="Akianonymus/android_kernel_motorola_msm8916"  revision="hx-o" remote="github" />
+  <project path="device/motorola/harpia" name="SubhrajyotiSen/android_device_motorola_harpia" revision="8.1" remote="github" />
+  <project path="device/motorola/msm8916-common" name="SubhrajyotiSen/android_device_motorola_msm8916-common" revision="8.1" remote="github" />
+  <project path="kernel/motorola/msm8916" name="SubhrajyotiSen/android_kernel_motorola_msm8916"  revision="oreo" remote="github" />
   
   <!--Dependencies-->
-  <project path="vendor/motorola" name="Akianonymus/vendor_motorola" revision="8.1" remote="github" />
-  <project path="device/qcom/common" name="android_device_qcom_common" revision="staging/lineage-15.1" remote="losgit" />
+  <project path="vendor/motorola" name="Moto8916-Devs/vendor_motorola" revision="8.1.x" remote="github" />
   <project path="external/sony/boringssl-compat" name="android_external_sony_boringssl-compat" revision="lineage-15.0" remote="losgit" />
   <project path="external/bson" name="android_external_bson" revision="cm-14.1" remote="losgit" />
 
