@@ -7,7 +7,7 @@ curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://
 ## To sync:
 
 ```
-repo sync -c -j4 --force-sync --no-clone-bundle --no-tags
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
 ## After syncing:
